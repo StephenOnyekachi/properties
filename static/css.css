@@ -1,0 +1,292 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+:root{
+    --bg: rgb(45, 244, 255);
+    --bg2: rgb(237, 255, 45);
+    --icon: rgb(255, 146, 45);
+    --text: #ffffff;
+    --text2: rgb(69, 69, 69);
+}
+
+.menu{
+    /* position: fixed; */
+    width: 100%;
+    /* justify-content: center; */
+    /* justify-items: center; */
+}
+.menu a{
+    background-color: var(--text);
+    color: var(--text2);
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+.menu a:hover{
+    background-color: var(--text2);
+    color: var(--text);
+}
+.menu .action{
+    background-color: var(--text2);
+    color: var(--text);
+}
+
+.section1{
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: var(--bg);
+}
+.section1-con{
+    width: 50%;
+    padding: 10px;
+}
+.section1-con h3{
+    color: var(--text);
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+.section1-con h1{
+    color: var(--text);
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.section1-con p{
+    color: var(--text2);
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.search{
+    border: 5px solid var(--bg2);
+    padding: 20px;
+    background-color: var(--text);
+}
+.search-con{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid var(--text2); */
+}
+.search-con select{
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--text2);
+}
+.search-con button{
+    background-color: var(--bg);
+    color: var(--text);
+    width: 20%;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.search h3{
+    color: var(--text2);
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+.search a{
+    color: var(--icon);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.search a i{
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px;
+}
+.search a:hover{
+    color: var(--text2);
+    background-color: var(--bg2);
+    border-radius: 50%;
+}
+
+.section2, .section3{
+    background-color: var(--text);
+    padding: 30px 20px;
+}
+.section2 h3, .section3 h3{
+    padding: 30px 20px;
+    font-size: 2rem;
+}
+.section2-con{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.section2-card{
+    width: 100%;
+    padding: 30px 20px;
+}
+.section2-card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    object-position: center;
+}
+.section2-card h4{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--bg);
+    padding: 6px 0px;
+}
+.section2-card p{
+    font-size: 1rem;
+    color: var(--text2);
+    padding: 6px 0px;
+}
+.small-card{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+}
+.card{
+    padding: 6px;
+    width: 100%;
+    margin: 6px;
+    border-radius: 4px;
+    /* text-align: center; */
+    background-color: var(--bg);
+}
+.card i{
+    color: var(--icon);
+    font-size: 2rem;
+    padding: 2px;
+}
+.card h3{
+    color: var(--text);
+    font-size: 2rem;
+    padding: 2px;
+    text-transform: capitalize;
+}
+.card p{
+    color: var(--text2);
+    font-size: 1rem;
+    padding: 2px;
+}
+.card span{
+    color: var(--text);
+    font-size: 2.5rem;
+    padding: 2px;
+    font-weight: bolder;
+}
+
+.cutomers{
+    padding: 3px;
+}
+.cutomers i{
+    color: var(--icon);
+    font-size: 1.5rem;
+    padding: 2px;
+}
+.cutomers p{
+    color: var(--text2);
+    font-size: 1rem;
+    padding: 2px;
+}
+.cutomers h4{
+    color: var(--bg);
+    font-size: 1.2rem;
+    padding: 2px;
+    text-transform: capitalize;
+}
+
+.last{
+    background-color: var(--text2);
+    padding: 30px 20px;
+}
+.ceo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    width: 100%;
+    padding: 30px 10px;
+    /* background-color: var(--bg); */
+    justify-content: center;
+}
+.ceo-card{
+    background-color: var(--bg);
+    width: 300px;
+    padding: 5px 15px;
+    text-align: center;
+    margin: 10px;
+}
+.ceo-card img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.ceo-card h4{
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--text);
+}
+.ceo-card p{
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.ends{
+    padding: 30px 20px;
+}
+.ends-card{
+    display: flex;
+    justify-content: center;
+    color: var(--text);
+    flex-wrap: wrap;
+}
+.ends-card-con{
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+.ends-card-con h3{
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--text);
+}
+.ends-card-con p{
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 2;
+}
+.ends-card-con a{
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: var(--text);
+    text-decoration: none;
+    display: flex;
+    transition: all 0.5s ease;
+}
+.ends-card-con a:hover{
+    /* border-bottom: 1px solid var(--text); */
+    padding: 5px;
+}
+.ends-card-con a i{
+    font-weight: lighter;
+    color: var(--icon);
+    width: 25px;
+}
+
+
+.profile-top-menue{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}

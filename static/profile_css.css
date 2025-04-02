@@ -1,0 +1,452 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+:root{
+    --text: #ffffff;
+    --bg: rgb(237, 237, 237);
+    --text1: rgb(92, 92, 92);
+    --text2: rgb(31, 31, 31);
+    --active: rgb(142, 255, 217);
+    --inactive: rgb(255, 160, 108);
+}
+
+.bar{
+    display: none;
+}
+.profile-top-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: var(--text2);
+}
+.profile-body{
+    width: 100%;
+    display: flex;
+}
+.profile-left-menu{
+    width: 20%;
+    height: 100vh;
+    text-transform: capitalize;
+}
+.profile-left-menu ul{
+    width: 100%;
+    display: block;
+}
+.profile-left-menu ul li{
+    width: 100%;
+    display: flex;
+}
+.profile-left-menu ul li:hover{
+    box-shadow: 0px 0px 2px var(--text2);
+    color: var(--text2);
+}
+.profile-left-menu ul li i{
+    padding: 10px;
+    width: 15%;
+    color: var(--active);
+}
+.profile-left-menu ul li a{
+    padding: 10px;
+    width: 85%;
+    text-decoration: none;
+    color: var(--text1);
+}
+.profile-left-menu ul li a:hover{
+    color: var(--text2);
+}
+.profile-content{
+    width: 80%;
+    background-color: var(--bg);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile-card{
+    width: 32%;
+    border-radius: 5px;
+    margin: 5px;
+    display: block;
+    background-color: var(--text);
+    box-shadow: 0px 0px 2px var(--text2);
+}
+.profile-card2{
+    width: 49%;
+    border-radius: 5px;
+    margin: 5px;
+    display: block;
+    background-color: var(--text);
+    box-shadow: 0px 0px 2px var(--text2);
+}
+.profile-card3{
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px;
+    display: block;
+    background-color: var(--text);
+    box-shadow: 0px 0px 2px var(--text2);
+}
+.profile-card-img{
+    width: 100%;
+    height: 250px;
+}
+.profile-card-img2{
+    width: 100%;
+    height: 150px;
+}
+.profile-card-img img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    object-fit: fill;
+}
+.profile-card-img2 img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    object-fit: fill;
+}
+.profile-card-more{
+    position: absolute;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    text-transform: capitalize;
+}
+.profile-card-more p{
+    padding: 10px;
+    background-color: var(--text);
+    color: var(--text1);
+}
+.profile-card-more a{
+    padding: 10px;
+    background-color: var(--text);
+    text-decoration: none;
+    color: var(--text1);
+}
+.profile-card-con{
+    padding: 10px;
+}
+.profile-card-con h3{
+    padding: 2px;
+    text-transform: capitalize;
+    color: var(--text2);
+}
+.profile-card-con p{
+    padding: 2px;
+    text-transform: capitalize;
+    color: var(--text1);
+}
+.profile-card-con2{
+    text-transform: capitalize;
+    padding: 30px;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+.profile-card-con3{
+    text-transform: capitalize;
+    padding: 30px;
+    height: 100%;
+}
+.profile-card-con2 h3{
+    font-size: 20px;
+    color: var(--text2);
+}
+.profile-card-con2 h1{
+    font-size: 40px;
+    color: var(--text1);
+}
+.profile-card-con2 p{
+    font-size: 18px;
+    color: var(--inactive);
+}
+.profile-card-con2 a{
+    padding: 10px;
+    background-color: var(--active);
+    text-decoration: none;
+    color: var(--text);
+}
+
+.profile-card-con3 .con{
+    padding: 10px;
+}
+.profile-card-con3 .con p, .profile-card-con3 .con h3{
+    padding: 2px;
+}
+
+
+/* for login and any other form */
+.form-body{
+    width: 100%;
+}
+.form-content{
+    width: 100%;
+    background-color: var(--bg);
+    padding: 10px;
+    height: 100vh auto;
+}
+.form-card{
+    width: 70%;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 50px 200px;
+    display: block;
+    background-color: var(--text);
+    box-shadow: 0px 0px 2px var(--text2);
+}
+.form-card form .con{
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.form-card form .con h3 span{
+    font-weight: lighter;
+    color: var(--inactive);  
+}
+.form-card form .con p{
+    font-weight: lighter;
+    color: var(--text1);  
+}
+.form-card form .con p a{
+    font-weight: lighter;
+    color: var(--active);
+    text-decoration: none;
+}
+.form-card form .con label{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--text2);
+}
+.form-card form .con input{
+    font-weight: lighter;
+    color: var(--text2);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.form-card form .con .input{
+    width: 100%;
+    margin-top: 5px;
+    box-shadow: 0px 0px 2px var(--text2);
+    border-radius: 5px;
+    display: flex;
+}
+.form-card form .con .input i{
+    padding: 10px;
+    color: var(--active);
+}
+.form-card form .con .input i:hover{
+    cursor: pointer;
+}
+.form-card form .con select{
+    font-weight: lighter;
+    color: var(--text2);
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 2px var(--text2);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.form-card form .con textarea{
+    font-weight: lighter;
+    color: var(--text2);
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+    /* margin-top: 5px; */
+    box-shadow: 0px 0px 2px var(--text2);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.form-card form .con button{
+    font-weight: lighter;
+    color: var(--text);
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    background-color: var(--active);
+    border-radius: 5px;
+}
+
+
+/* for viewing induvisual items */
+.view-card{
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    background-color: var(--text);
+    box-shadow: 0px 0px 2px var(--text2);
+    height: 300px;
+}
+.view-card-img{
+    width: 30%;
+    height: 300px auto;
+}
+.view-card-img img{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 100%;
+    object-fit: fill;
+    height: 300px;
+}
+.view-card-con{
+    padding: 10px;
+}
+.view-card-con h3{
+    padding: 2px;
+    text-transform: capitalize;
+    color: var(--text2);
+}
+.view-card-con p{
+    padding: 2px;
+    text-transform: capitalize;
+    color: var(--text1);
+}
+.view-card-con form .con label{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--text2);
+}
+.view-card-con form .con input{
+    font-weight: lighter;
+    color: var(--text2);
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 2px var(--text2);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.view-card-con form .con button{
+    font-weight: lighter;
+    color: var(--text);
+    /* width: 100%; */
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    background-color: var(--active);
+    border-radius: 5px;
+}
+.view-card-con form .con a{
+    font-weight: lighter;
+    color: var(--text);
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    background-color: var(--inactive);
+    text-decoration: none;
+    border-radius: 5px;
+}
+.view-card-con .con p a .on{
+    font-weight: lighter;
+    color: var(--active);
+    padding: 10px;
+}
+.view-card-con .con p a .cancel{
+    font-weight: lighter;
+    color: var(--inactive);
+    padding: 10px;
+}
+
+.view-card-gal{
+    width: 100%;
+}
+.view-card-gal h3{
+    padding: 2px;
+    text-transform: capitalize;
+    color: var(--text2);
+}
+.view-card-gal img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    float: left;
+    padding: 5px;
+}
+
+/* for admin and its computects */
+.admin-body{
+    width: 100%;
+}
+.admin-content{
+    width: 100%;
+    background-color: var(--bg);
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.admin-card{
+    width: 31%;
+    border-radius: 5px;
+    height: 200px;
+    margin: 10px;
+    display: block;
+    background-color: var(--text);
+    box-shadow: 0px 0px 2px var(--text2);
+}
+.admin-card-con{
+    text-transform: capitalize;
+    padding: 15px;
+}
+.admin-card-con i{
+    font-weight: lighter;
+    padding: 10px;
+    color: var(--active);
+}
+.admin-card-con h3{
+    padding: 2px;
+    text-transform: capitalize;
+    color: var(--text2);
+    margin-bottom: 15px;
+}
+.admin-card-con a{
+    font-weight: lighter;
+    color: var(--text);
+    padding: 10px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    background-color: var(--active);
+    text-decoration: none;
+    border-radius: 5px;
+}
+.admin-card-con p{
+    font-weight: lighter;
+    padding: 2px;
+    text-transform: capitalize;
+    color: var(--text1);
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
